@@ -1,23 +1,27 @@
 /** @module readable-ms */
 
+import humanizeDuration from "humanize-duration"
+
 /**
  * @function
- * @param {number} [compareValue]
- * @returns {number} Seconds passed since Unix epoch (01 January 1970)
+ * @param {number} milliseconds
+ * @returns {string} Formatted duration
  * @example
  * import readableMs from "readable-ms"
- * const result = readableMs()
- * result === 1549410770
- * setTimeout(() => {
- *   const result2 = readableMs(result)
- *   result2 === 3
- * }, 3000)
+ * const result = readableMs(3021)
+ * result === "3s 21ms"
  */
-export default compareValue => {
-  const seconds = Math.floor(Date.now() / 1000)
-  if (compareValue === undefined) {
-    return seconds
-  } else {
-    return seconds - compareValue
-  }
-}
+export default humanizeDuration.humanizer({
+  units: ["h", "m", "s", "ms"],
+  spacer: "",
+  delimiter: " ",
+  language: "short",
+  languages: {
+    short: {
+      h: () => "h",
+      m: () => "m",
+      s: () => "s",
+      ms: () => "ms",
+    },
+  },
+})
