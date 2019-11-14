@@ -8,6 +8,7 @@ const indexModule = (process.env.MAIN ? path.resolve(process.env.MAIN) : path.jo
 const {default: readableMs} = indexModule
 
 it("should run", () => {
-  const result = readableMs(3021)
-  expect(result).toBe("3s 21ms")
+  expect(readableMs(3021)).toBe("3s 21ms")
+  expect(readableMs(0)).toBe("0s")
+  expect(readableMs()).toBe("0s")
 })

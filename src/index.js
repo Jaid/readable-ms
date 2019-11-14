@@ -2,16 +2,7 @@
 
 import humanizeDuration from "humanize-duration"
 
-/**
- * @function
- * @param {number} milliseconds
- * @returns {string} Formatted duration
- * @example
- * import readableMs from "readable-ms"
- * const result = readableMs(3021)
- * result === "3s 21ms"
- */
-export default humanizeDuration.humanizer({
+const humanizer = humanizeDuration.humanizer({
   units: ["h", "m", "s", "ms"],
   spacer: "",
   delimiter: " ",
@@ -25,3 +16,22 @@ export default humanizeDuration.humanizer({
     },
   },
 })
+
+/**
+ * @function
+ * @param {number} milliseconds
+ * @returns {string} Formatted duration
+ * @example
+ * import readableMs from "readable-ms"
+ * const result = readableMs(3021)
+ * result === "3s 21ms"
+ * const result2 = readableMs(0)
+ * result2 === "0s"
+ */
+export default ms => {
+  if (Number.isFinite(ms) && ms !== 0) {
+    return humanizer(ms)
+  } else {
+    return "0s"
+  }
+}
