@@ -1,51 +1,64 @@
 # readable-ms
 
 
-Converts a milliseconds value into a human-readable string.
+<a href="https://raw.githubusercontent.com/Jaid/readable-ms/master/license.txt"><img src="https://img.shields.io/github/license/Jaid/readable-ms?style=flat-square" alt="License"/></a>  
+<a href="https://actions-badge.atrox.dev/Jaid/readable-ms/goto"><img src="https://img.shields.io/endpoint.svg?style=flat-square&url=https%3A%2F%2Factions-badge.atrox.dev%2FJaid%2Freadable-ms%2Fbadge" alt="Build status"/></a> <a href="https://github.com/Jaid/readable-ms/commits"><img src="https://img.shields.io/github/commits-since/Jaid/readable-ms/v2.0.1?style=flat-square&logo=github" alt="Commits since v2.0.1"/></a> <a href="https://github.com/Jaid/readable-ms/commits"><img src="https://img.shields.io/github/last-commit/Jaid/readable-ms?style=flat-square&logo=github" alt="Last commit"/></a> <a href="https://github.com/Jaid/readable-ms/issues"><img src="https://img.shields.io/github/issues/Jaid/readable-ms?style=flat-square&logo=github" alt="Issues"/></a>  
+<a href="https://npmjs.com/package/readable-ms"><img src="https://img.shields.io/npm/v/readable-ms?style=flat-square&logo=npm&label=latest%20version" alt="Latest version on npm"/></a> <a href="https://github.com/Jaid/readable-ms/network/dependents"><img src="https://img.shields.io/librariesio/dependents/npm/readable-ms?style=flat-square&logo=npm" alt="Dependents"/></a> <a href="https://npmjs.com/package/readable-ms"><img src="https://img.shields.io/npm/dm/readable-ms?style=flat-square&logo=npm" alt="Downloads"/></a>
+
+**Converts a milliseconds value into a human-readable string.**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Installation
-<a href='https://npmjs.com/package/readable-ms'><img alt='npm logo' src='https://github.com/Jaid/action-readme/raw/master/images/base-assets/npm.png'/></a>
+<a href="https://npmjs.com/package/readable-ms"><img src="https://img.shields.io/badge/npm-readable--ms-C23039?style=flat-square&logo=npm" alt="readable-ms on npm"/></a>
 ```bash
 npm install --save readable-ms@^2.0.1
 ```
-<a href='https://yarnpkg.com/package/readable-ms'><img alt='Yarn logo' src='https://github.com/Jaid/action-readme/raw/master/images/base-assets/yarn.png'/></a>
+<a href="https://yarnpkg.com/package/readable-ms"><img src="https://img.shields.io/badge/Yarn-readable--ms-2F8CB7?style=flat-square&logo=yarn&logoColor=white" alt="readable-ms on Yarn"/></a>
 ```bash
 yarn add readable-ms@^2.0.1
 ```
-
-
-## Try it out
-<img alt='Chromium logo' src='https://github.com/Jaid/action-readme/raw/master/images/base-assets/browser.png'/>
-Open a browser's JavaScript console and execute:
-
-```javascript
-const scriptElement = document.createElement("script");
-scriptElement.setAttribute("type","text/javascript");
-scriptElement.setAttribute("src","https://unpkg.com/readable-ms@2.0.1");
-document.querySelector("head").appendChild(scriptElement);
+<a href="https://jsdelivr.com/package/npm/readable-ms/"><img src="https://img.shields.io/badge/jsDelivr-readable--ms-orange?style=flat-square&logo=html5&logoColor=white" alt="readable-ms on jsDelivr"/></a> <a href="https://unpkg.com/browse/readable-ms/"><img src="https://img.shields.io/badge/UNPKG-readable--ms-orange?style=flat-square&logo=html5&logoColor=white" alt="readable-ms on UNPKG"/></a>
+```html
+<script src="https://cdn.jsdelivr.net/npm/readable-ms@2.0.1/index.js"/>
 ```
 
-This module is now loaded in a variable that can be accessed in any scope.
 
-```javascript
-typeof readableMs.default
+
+
+
+
+
+
+## Development
+
+
+
+Setting up:
+```bash
+git clone git@github.com:Jaid/readable-ms.git
+cd readable-ms
+npm install
 ```
-
-## Documentation
-**Kind**: Exported function  
-**Returns**: <code>string</code> - Formatted duration  
-
-| Param | Type |
-| --- | --- |
-| milliseconds | <code>number</code> | 
-
-**Example**  
-```javascript
-import readableMs from "readable-ms"
-const result = readableMs(3021)
-result === "3s 21ms"
-const result2 = readableMs(0)
-result2 === "0s"
+Testing:
+```bash
+npm run test:dev
+```
+Testing in production environment:
+```bash
+npm run test
 ```
 
 
@@ -53,7 +66,7 @@ result2 === "0s"
 ```text
 MIT License
 
-Copyright © 2019, Jaid <jaid.jsx@gmail.com> (github.com/jaid)
+Copyright © 2020, Jaid <jaid.jsx@gmail.com> (github.com/jaid)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
