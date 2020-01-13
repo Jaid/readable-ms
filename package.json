@@ -32,5 +32,6 @@
     "prepareActionJest": "npm run build:prod"
   },
   "name": "readable-ms",
-  "description": "Converts a milliseconds value into a human-readable string."
+  "description": "Converts a milliseconds value into a human-readable string.",
+  "funding": "https://github.com/sponsors/jaid"
 }
