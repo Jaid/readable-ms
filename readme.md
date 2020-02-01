@@ -34,7 +34,19 @@ npm install --save @jaid/readable-ms@^2.0.2
 
 
 
+## Example
 
+```javascript
+import readableMs from "readable-ms"
+
+const result = readableMs(3021)
+```
+
+Variable `result` will now be:
+
+```javascript
+"3s 21ms"
+```
 
 
 
