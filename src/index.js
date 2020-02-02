@@ -31,7 +31,6 @@ const humanizer = humanizeDuration.humanizer({
 export default ms => {
   if (Number.isFinite(ms) && ms !== 0) {
     return humanizer(ms)
-  } else {
-    return "0s"
   }
+  return "0s"
 }
