@@ -37,5 +37,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jaid/readable-ms"
-  }
+  },
+  "homepage": "https://github.com/Jaid/readable-ms",
+  "keywords": [
+    "humanize",
+    "milliseconds"
+  ]
 }
