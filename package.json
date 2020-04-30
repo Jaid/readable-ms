@@ -39,7 +39,15 @@
   },
   "homepage": "https://github.com/Jaid/readable-ms",
   "keywords": [
+    "convert",
     "humanize",
-    "milliseconds"
+    "lib",
+    "library",
+    "milliseconds",
+    "ms",
+    "string",
+    "stringify",
+    "util",
+    "utility"
   ]
 }
