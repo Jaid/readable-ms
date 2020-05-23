@@ -28,9 +28,9 @@ const humanizer = humanizeDuration.humanizer({
  * const result2 = readableMs(0)
  * result2 === "0s"
  */
-export default ms => {
-  if (Number.isFinite(ms) && ms !== 0) {
-    return humanizer(ms)
+export default milliseconds => {
+  if (Number.isFinite(milliseconds) && milliseconds !== 0) {
+    return humanizer(milliseconds)
   }
   return "0s"
 }
