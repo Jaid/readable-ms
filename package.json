@@ -6,16 +6,16 @@
     "humanize-duration": "^3.23.1"
   },
   "devDependencies": {
-    "acorn": "^7.4.0",
-    "babel-jest": "^26.2.2",
+    "acorn": "^8.0.1",
+    "babel-jest": "^26.3.0",
     "babel-preset-jaid": "^8.1.1",
     "browserslist-config-jaid-universal": "^2.1.0",
-    "eslint": "^7.6.0",
+    "eslint": "^7.7.0",
     "eslint-config-jaid": "^1.49.0",
-    "jest": "^26.2.2",
+    "jest": "^26.4.0",
     "rimraf": "^3.0.2",
     "webpack": "^4.44.1",
-    "webpack-config-jaid": "^11.11.0"
+    "webpack-config-jaid": "^11.12.1"
   },
   "scripts": {
     "clean": "rimraf dist/",
