@@ -8,15 +8,15 @@
   "devDependencies": {
     "acorn": "^8.0.1",
     "babel-jest": "^26.3.0",
-    "babel-preset-jaid": "^8.1.1",
+    "babel-preset-jaid": "^8.1.2",
     "browserslist-config-jaid-universal": "^3.0.0",
-    "eslint": "^7.9.0",
+    "eslint": "^7.10.0",
     "eslint-config-jaid": "^1.49.0",
     "jest": "^26.4.2",
     "rimraf": "^3.0.2",
     "tsconfig-jaid": "^2.0.1",
     "webpack": "^4.44.2",
-    "webpack-config-jaid": "^11.12.2"
+    "webpack-config-jaid": "^11.12.3"
   },
   "scripts": {
     "clean": "rimraf dist/",
