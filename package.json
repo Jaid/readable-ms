@@ -1,5 +1,7 @@
 {
+  "name": "readable-ms",
   "webpackConfigJaid": "universalLib",
+  "description": "Converts a milliseconds value into a human-readable string.",
   "version": "2.0.4",
   "author": "Jaid <jaid.jsx@gmail.com> (https://github.com/Jaid)",
   "dependencies": {
@@ -31,8 +33,6 @@
     "test:debug": "DEBUG=\"$DEBUG,$(basename $PWD),$(basename $PWD):*\" NODE_ENV=test node --inspect=9229 node_modules/jest/bin/jest.js --runInBand",
     "prepareActionJest": "npm run build:prod"
   },
-  "name": "readable-ms",
-  "description": "Converts a milliseconds value into a human-readable string.",
   "funding": "https://github.com/sponsors/jaid",
   "repository": {
     "type": "git",
