@@ -29,7 +29,7 @@ const humanizer = humanizeDuration.humanizer({
  * result2 === "0s"
  */
 export default milliseconds => {
-  if (Number.isFinite(milliseconds) && milliseconds !== 0) {
+  if (milliseconds !== 0 && Number.isFinite(milliseconds)) {
     return humanizer(milliseconds)
   }
   return "0s"
