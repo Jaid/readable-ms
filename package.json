@@ -12,12 +12,12 @@
     "babel-jest": "^27.0.6",
     "babel-preset-jaid": "^13.1.0",
     "browserslist-config-jaid-universal": "^3.0.0",
-    "eslint": "^7.31.0",
+    "eslint": "^7.32.0",
     "eslint-config-jaid": "^1.55.0",
     "jest": "^27.0.6",
     "rimraf": "^3.0.2",
     "tsconfig-jaid": "^2.1.1",
-    "webpack": "^5.46.0",
+    "webpack": "^5.49.0",
     "webpack-config-jaid": "^15.0.0"
   },
   "scripts": {
