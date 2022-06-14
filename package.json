@@ -2,7 +2,7 @@
   "name": "readable-ms",
   "webpackConfigJaid": "universalLib",
   "description": "Converts a milliseconds value into a human-readable string.",
-  "version": "2.0.4",
+  "version": "3.0.0",
   "author": "Jaid <jaid.jsx@gmail.com> (https://github.com/Jaid)",
   "dependencies": {
     "humanize-duration": "^3.27.2"
