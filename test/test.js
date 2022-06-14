@@ -1,4 +1,4 @@
-import path from "path"
+import path from "node:path"
 
 const indexModule = require(process.env.MAIN ? path.resolve(process.env.MAIN) : path.join(__dirname, "..", "src"))
 
