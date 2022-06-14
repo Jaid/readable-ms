@@ -1,11 +1,14 @@
 import path from "node:path"
 
-const indexModule = require(process.env.MAIN ? path.resolve(process.env.MAIN) : path.join(__dirname, "..", "src"))
+import {fileURLToPath, pathToFileURL} from "node:url"
+
+const dirName = path.dirname(fileURLToPath(import.meta.url))
+const indexPath = process.env.MAIN ?? path.join(dirName, "..", "src", "index.js")
 
 /**
  * @type { import("../src") }
  */
-const {default: readableMs} = indexModule
+const {default: readableMs} = await import(pathToFileURL(indexPath))
 
 it("should run", () => {
   expect(readableMs(3021)).toBe("3s 21ms")
