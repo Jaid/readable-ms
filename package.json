@@ -50,5 +50,6 @@
     "stringify",
     "util",
     "utility"
-  ]
+  ],
+  "type": "module"
 }
